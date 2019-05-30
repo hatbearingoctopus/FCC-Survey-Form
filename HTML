@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+	</script>
+	
+</head>
+  <!-- title -->
+<body>
+	<h1 id="title">Survey Form</h1>
+  <!-- description -->
+	<p id="description">Let us know how we can improve FreeCodeCamp</p>
+  <!-- form begins -->
+	<div class="survey-container">
+		<form action="/action_page.php" id="survey-form" name="survey-form">
+			<!-- name form element -->
+			<div class="labels">
+				<label for="name" id="name-label">Enter your name:</label>
+			</div><input id="name" placeholder="Name" required="" type="text"><br>
+			<!-- email form element -->
+			<div class="labels">
+				<br>
+				<label for="email" id="email-label">Enter your email:</label><br>
+			</div><input class="input-field" id="email" placeholder="Email" required="" type="email"><br>
+			<!-- age form element -->
+			<div class="labels">
+				<br>
+				<label for="age" id="number-label">Enter your age:</label>
+			</div><input class="input-field" id="number" max="120" min="10" name="age" placeholder=" Age"
+			type="number"><br>
+			<!-- dropdown menu -->
+			<br>
+			<label for="most-like">What's your favorite part of FCC:</label><br>
+			<select id="dropdown">
+				<option disabled selected value="">
+					Select an option
+				</option>
+				<option value="curriculum">
+					Curriculum
+				</option>
+				<option value="projects">
+					Projects
+				</option>
+				<option value="community">
+					Community
+				</option>
+				<option value="opensource">
+					Opensource
+				</option>
+			</select><br>
+			<!-- radio buttons -->
+			<br>
+			<label for="preferences">Would you recommend FCC to a friend?</label><br>
+			<div class="radio">
+				<nobr><input class="radio" name="radio" type="radio" value="Definitely"> Definitely</nobr>
+				<nobr><input class="radio" name="radio" type="radio" value="Maybe"> Maybe</nobr>
+				<nobr><input class="radio" name="radio" type="radio" value="Probably not"> Probably not</nobr>
+			</div>
+      <!-- check boxes -->
+			<br>
+			<label for="preferences">What areas of FCC need improvement?<br>
+			(Check all that apply):</label>
+			<div class="checkboxes">
+				<br>
+				<input class="checkbox" name="front end projects" type="checkbox" value="front end projects">
+				Front end projects<br>
+				<input class="checkbox" name="back end projects" type="checkbox" value="back end projects">
+				Back end projects<br>
+				<input class="checkbox" name="challenges" type="checkbox" value="challenges"> Challenges<br>
+				<input class="checkbox" name="online forum" type="checkbox" value="online forum"> Online
+				forum<br>
+				<input class="checkbox" name="videos" type="checkbox" value="videos"> Videos<br>
+				<input class="checkbox" name="local meetups" type="checkbox" value="local meetups"> Local
+				meetups<br>
+			</div>
+      <!-- extra comments section -->
+			<br>
+			<form action="/action_page.php" id="usrform" name="usrform">
+				<br>
+				<label for="preferences">Anything else you'd like to ad?</label><br>
+				<br>
+				<textarea form="usrform" name="comment">Comments go here...</textarea><br>
+				<!-- submit button -->
+				<br>
+				<input id="submit" type="submit"><br>
+				<br>
+			</form>
+      <!-- form ends -->
+		</form>
+	</div>
+	<footer>
+		Designed & coded by: <a href="https://codepen.io/hatbearingoctopus/" target=
+		"_blank">Hatbearingoctopus</a><!-- link to -->
+	</footer>
+</body>
+</html>
